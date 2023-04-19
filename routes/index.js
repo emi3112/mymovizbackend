@@ -5,7 +5,7 @@ const fetch = require("node-fetch");
 
 const api_key = process.env.API_KEY;
 
-router.get("https://mymovizbackend-beta.vercel.app/movies", (req, res) => {
+router.get("/movies", (req, res) => {
   fetch(
     `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}`
   )
