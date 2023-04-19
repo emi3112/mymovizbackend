@@ -20,7 +20,7 @@ router.get("/movies", (req, res) => {
           const str = movie.overview
           movies.push({
             title: movie.title,
-            overview: str.substring(0,250) + '...',
+            overview: str.substring(0,200) + '...',
             poster: `https://image.tmdb.org/t/p/w500/${movie.poster_path}`,
             voteAverage: movie.vote_average,
             voteCount: movie.vote_count,
